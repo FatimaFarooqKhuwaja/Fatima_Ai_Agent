@@ -35,7 +35,7 @@ config = RunConfig(
 # 🛠️ Function Tool - about me
 @function_tool
 def about_me_tool(query: str) -> str:
-    """Responds based on query: who made you vs who is Fatima vs tell me about yourself."""
+    """Responds based on query: who made you, who are you vs who is Fatima vs tell me about yourself."""
     
     query_lower = query.lower()
 
@@ -49,9 +49,9 @@ def about_me_tool(query: str) -> str:
         return (
             "Fatima Farooq Khuwaja ek passionate Full Stack Engineer hain jo currently 2nd year (Intermediate) ki student hain. "
             "Woh Next.js aur Python dono me expert hain. "
-            "Fatima GIAIC ki student hain aur abhi Quarter 4 me Agentic AI parh rahi hain. "
-            "Unhon ne 100+ websites develop ki hain, jisme eCommerce, banking, QCommerce, music gallery, portfolio, blog, committee apps waghera shamil hain. "
-            "Python me unke projects me password strength meter, password generator, money generator, calculator aur random joke generator jaise apps shamil hain. "
+            "Fatima GIAIC ki student hain aur abhi Quarter 3 me Agentic AI parh rahi hain. "
+            "Unhon ne 100+ websites develop ki hain, jisme eCommerce, banking, QCommerce, music gallery, portfolio, blog, fullstack form, committee apps waghera shamil hain. "
+            "Python me unke projects me password strength meter,personal library manager, password generator,unit converter, money generator, calculator aur random joke generator jaise apps shamil hain. "
             "Unka aim AI aur software engineering me excellence hasil karna hai. 🚀"
         )
 
@@ -86,16 +86,11 @@ You are a smart AI assistant that decides how to respond based on the user's inp
 # 🧠 Streamlit Chat UI
 st.set_page_config(page_title="Fatima AI Assistant", page_icon="🤖")
 
-st.title("🤖 Fatima's AI Assistant")
+st.title("🤖Fatima's Assistant")
 
 st.write("""
 Welcome! I'm an intelligent assistant created by **Fatima Farooq Khuwaja**.  
-You can:
-- ✍️ Ask me to write short stories or creative content  
-- 🌍 Ask general knowledge questions  
-- 🧕 Ask things like *"Who made you?"* or *"Who is Fatima Farooq?"* to know more about my creator
-
-Type your question below and let’s talk! 👇
+What can I help with?
 """)
 
 
